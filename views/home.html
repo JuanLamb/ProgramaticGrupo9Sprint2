@@ -53,23 +53,35 @@
     </main>
 
     <footer class="footer-home">
-        <form action="">
-            <input type="text" placeholder="Suscribite a nuestro newsletter">
-            <button type="submit">Suscribirme</button>
+        <form class="suscribe" action="/subscribe" method="POST">
+            <div class="form-label">
+                <h3>Suscribite a nuestro newsletter</h3>
+                <p>¡Mantente al dia con nuestras últimas ofertas!</p>
+            </div>
+            <div class="subvar">
+                <input type="email" name="subscribe" placeholder="Email">
+                <button type="submit"><a href="/"><i class="fas fa-arrow-right"></i></a></button>
+            </div>
         </form>
-        <div class="redes">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-        <div class="info">
-            <ul>
-                <li>Quienes somos</li>
-                <li>Contacto</li>
-                <li>Atencion al cliente</li>
-                <li>Terminos y condiciones</li>
-            </ul>
+        <div class="footerBottom">
+            <div class="logoBox">
+                <img class="logoImg" src="/images/logo.png" alt="Botacura">
+                <img class="logoLetras" src="/images/logoLetras.png" alt="Botacura">
+            </div>
+            <div class="info">
+                <ul>
+                    <li>Quienes somos</li>
+                    <li>Contacto</li>
+                    <li>Atencion al cliente</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
         </div>
     </footer>
 </body>

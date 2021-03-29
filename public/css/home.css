@@ -10,9 +10,9 @@ body {
 
 /* =========================== HEADER =========================== */
 .header-home{
-    background-color: #cfd186;
+    background-color: #f2edd7;
     width: 100vw;
-    border-bottom: solid 5px #552244;
+    border-bottom: solid 5px #3a6351;
 }
 
 .header-home section {
@@ -52,7 +52,7 @@ body {
 
 .header-home a{
     text-decoration: none;
-    color: #596157;
+    color: #393232;
 }
 
 .header-home .central-navbar {
@@ -66,12 +66,111 @@ body {
     }
 
     main {
-        background-color: #fff;
+        background-color: #f2edd7;
     }
 /* =================== FOOTER ========================= */
 
 .footer-home {
-    border-top: solid 5px #5b8c5a;
-    background-color: #cfd186;
+    border-top: solid 5px #e48257;
+    background-color: #f2edd7;
     height: 30vh;
+}
+
+.footer-home .suscribe {
+    background-image: url(/images/img-footer.jpg);
+    background-color: #cccccc;
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribe div {
+    width: 80%;
+    color: #fff;
+    text-align: left;
+}
+
+.form-label {
+    margin-bottom: 15px;
+}
+
+.subvar {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+}
+
+.subvar input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.subvar input::placeholder {
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.subvar button {
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.subvar button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerBottom {
+    background-color: #393232;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footerBottom .logoBox {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.footerBottom .logoImg {
+    height: 30px;
+}
+
+.footerBottom .logoLetras {
+    width: 100px;
+    height: 30px;
+}
+
+.footerBottom .info {
+    flex: 1 1 50%;
+}
+
+.footerBottom .redes {
+    flex: 1 1 100%;
+}
+
+.footerBottom .redes i {
+    background-color: #f2edd7;
+    color: #393232;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footerBottom li {
+    list-style: none;
+    color: #f2edd7;
 }
