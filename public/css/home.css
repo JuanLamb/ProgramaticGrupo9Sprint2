@@ -27,23 +27,32 @@ body {
 
 .header-home .bars {
     height: 30px;
-    width: 30px;
+    width: 33%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 20px;
     padding-left:20px;
 }
 
+.header-home .bars {
+    width: 33%;
+    display: flex;
+    justify-content: left;
+}
+
 .header-home .main-nav{
-    width: 100px;
-    padding-right: 10px;
+    width: 33%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-home .right-navbar {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100px;
+    flex: 1 1 100%;
 }
 
 .header-home .right-navbar i{
@@ -168,6 +177,13 @@ body {
     width: 25px;
     text-align: center;
     padding-top: 5px;
+}
+
+.footerBottom ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    font-size: 14px;
 }
 
 .footerBottom li {
