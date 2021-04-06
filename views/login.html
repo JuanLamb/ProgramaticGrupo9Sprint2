@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Login Botacura</title>
+</head>
+<body>
+    
+    <header class="header-home">
+        <section>
+            <div class="bars">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/images/logo/logo.png" alt="logo">    
+            </div>
+            <nav class="main-nav">
+                <div class="central-navbar">
+                    <ul>
+                        <li><a href="#">Escalada</a></li>
+                        <li><a href="#">Camping</a></li>
+                        <li><a href="#">Montanismo</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="right-navbar">
+                    <div class="user">
+                        <a><i class="fas fa-hiking"></i></a>
+                    </div>
+    
+                    <div class="search">
+                        <a><i class="fas fa-search"></i></a>
+                    </div>
+    
+                    <div class="cart">
+                        <a><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <div class="login-title">
+        <h2>Ingresá a tu cuenta</h2>
+    </div>
+    
+    <form action="/login" method="post" form="form-login" class="form-login">
+        <div class="login-form">
+            <div class="login-usuario"> 
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+            </div>
+
+            <div class="login-password">
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+            </div>
+            
+            <div class="login-button">
+                <button type="submit"><a href = "/">Enviar</a></button>
+            </div>
+            <p class="form-link">Aún no estas registrado? <a href="/register">Registrate aquí</a></p>
+        </div>
+
+    </form>
+
+
+
+
+    <footer class="footer-home">
+        <form class="suscribe" action="/subscribe" method="POST">
+            <div class="form-label">
+                <h3>Suscribite a nuestro newsletter</h3>
+                <p>¡Mantente al dia con nuestras últimas ofertas!</p>
+            </div>
+            <div class="subvar">
+                <input type="email" name="subscribe" placeholder="Email">
+                <button type="submit"><a href="/"><i class="fas fa-arrow-right"></i></a></button>
+            </div>
+        </form>
+        <div class="footerBottom">
+            <div class="logoBox">
+                <img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura">
+                <img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura">
+            </div>
+            <div class="info">
+                <ul>
+                    <li>Quienes somos</li>
+                    <li>Contacto</li>
+                    <li>Atencion al cliente</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* =========================== HEADER =========================== */
+
+.header-home{
+    background-color: #f2edd7;
+    width: 100vw;
+    border-bottom: solid 5px #3a6351;
+}
+
+.header-home section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-home img {
+    width: 70px;
+}
+
+.header-home .bars {
+    height: 30px;
+    width: 33%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+    padding-left:20px;
+}
+
+.header-home .bars {
+    width: 33%;
+    display: flex;
+    justify-content: left;
+}
+
+.header-home .main-nav{
+    width: 33%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-home .right-navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    flex: 1 1 100%;
+}
+
+.header-home .right-navbar i{
+    font-size: 20px;
+}
+
+.header-home a{
+    text-decoration: none;
+    color: #393232;
+}
+
+.header-home .central-navbar {
+    display: none;
+}
+
+/* =================== FORM ========================= */
+
+input:required:invalid {
+    border: solid red 1px;
+}
+
+input:required:valid {
+    border: solid rgb(78, 245, 78) 1px;
+}
+
+.form-titulo {
+    text-align: center;
+    color: #3a6351;
+    margin: 10px;
+    font-size: 15px;
+}
+
+h4 {
+    margin: 10px;
+    font-size: 15px;
+}
+
+input {
+    
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.text-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 20px;
+}
+
+.text-inputs input {
+    width: 100%;
+    
+}
+
+.form-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    padding: 20px 35px;
+
+}
+
+.form-inputs .text-inputs div {
+    flex: 1 1 100%;
+    text-align: center;
+    display: flex;
+
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+button a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+
+button {
+    text-decoration: none;
+    background-color: #3a6351;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* =================== FOOTER ========================= */
+
+.footer-home {
+    border-top: solid 5px #e48257;
+    background-color: #f2edd7;
+    height: 30vh;
+}
+
+.footer-home .suscribe {
+    background-image: url(/images/img-footer.jpg);
+    background-color: #cccccc;
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribe div {
+    width: 80%;
+    color: #fff;
+    text-align: left;
+}
+
+.form-label {
+    margin-bottom: 15px;
+}
+
+.subvar {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+}
+
+.subvar input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.subvar input::placeholder {
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.subvar button {
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.subvar button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerBottom {
+    background-color: #393232;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footerBottom .logoBox {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.footerBottom .logoImg {
+    height: 30px;
+}
+
+.footerBottom .logoLetras {
+    width: 100px;
+    height: 30px;
+}
+
+.footerBottom .info {
+    flex: 1 1 50%;
+}
+
+.footerBottom .redes {
+    flex: 1 1 100%;
+}
+
+.footerBottom .redes i {
+    background-color: #f2edd7;
+    color: #393232;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footerBottom ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+.footerBottom li {
+    list-style: none;
+    color: #f2edd7;
+}

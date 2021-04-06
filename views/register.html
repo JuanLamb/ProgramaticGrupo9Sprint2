@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Registro Botacura</title>
+</head>
+<body>
+    
+    <header class="header-home">
+        <section>
+            <div class="bars">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <img src="/images/logo/logo.png" alt="logo">    
+            </div>
+            <nav class="main-nav">
+                <div class="central-navbar">
+                    <ul>
+                        <li><a href="#">Escalada</a></li>
+                        <li><a href="#">Camping</a></li>
+                        <li><a href="#">Montanismo</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Marcas</a></li>
+                    </ul>
+                </div>
+                <div class="right-navbar">
+                    <div class="user">
+                        <a><i class="fas fa-hiking"></i></a>
+                    </div>
+    
+                    <div class="search">
+                        <a><i class="fas fa-search"></i></a>
+                    </div>
+    
+                    <div class="cart">
+                        <a><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <div class="form-titulo">
+
+        <h2>Registro de usuario</h2>
+
+    </div>
+
+    <form action="/register" method="POST" form="form-registro" class="form-registro">
+      
+        <div class="form-inputs">
+               <div class="text-inputs">
+                    <div class="nombre-apellido">
+                        
+                        <input type="text" placeholder="Nombre y apellido" name="nombre-apellido" id="nombre-apellido" required>
+                    </div>
+                    
+                
+                    <div class="usuario">
+                        
+                        <input type="text" placeholder="Usuario" name="usuario" id="usuario" minlength="5" required>
+                    </div>
+
+                    <div class="email">
+                                
+                        <input type="email" placeholder="E-mail" name="email" id="email" required>
+                    </div>
+                    <br>
+                    
+                    <h4>Fecha de nacimiento:</h4>
+                    <div class="nacimiento">
+                    
+                        <input type="date" name="nacimiento" id="nacimiento" required>
+                    </div>
+
+                    <div class="domicilio">
+                        
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                    </div>
+            
+
+    <br>
+
+            <div class="password">
+                        
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                
+                <input type="password" name="password" id="password-confirm" placeholder="Confirma tu contraseña" required>
+            </div>
+            <br>
+            
+            </div>
+            <h4>Foto de usuario</h4>
+            <div class="foto">
+                
+                <input type="file" name="avatar" id="avatar" accept=".jpg" multiple>
+            </div>
+    <br>
+            <div class="button">
+                <button type="reset">Cancelar</button>
+                <button type="submit"><a href = "/">Enviar</a></button>
+            </div>
+
+            <p class="form-link">Ya estás registrado? <a href="/login">Ingrese aquí</a></p>
+        </div>
+    </form>
+
+
+
+    <footer class="footer-home">
+        <form class="suscribe" action="/subscribe" method="POST">
+            <div class="form-label">
+                <h3>Suscribite a nuestro newsletter</h3>
+                <p>¡Mantente al dia con nuestras últimas ofertas!</p>
+            </div>
+            <div class="subvar">
+                <input type="email" name="subscribe" placeholder="Email">
+                <button type="submit"><a href="/"><i class="fas fa-arrow-right"></i></a></button>
+            </div>
+        </form>
+        <div class="footerBottom">
+            <div class="logoBox">
+                <img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura">
+                <img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura">
+            </div>
+            <div class="info">
+                <ul>
+                    <li>Quienes somos</li>
+                    <li>Contacto</li>
+                    <li>Atencion al cliente</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
