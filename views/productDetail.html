@@ -12,7 +12,7 @@
 
     </header>
 
-    <main>
+    <main class="productDetail">
         <div class="imagenes-izq">
             <img src="#" alt="primeraFotoIzq">
             <img src="#" alt="segundaFotoIzq">
@@ -22,11 +22,70 @@
         <div class="imagen-principal">
             <img src="#" alt="fotoPrincipal">
         </div>
-        <article class="caracteristicas">
+        <section class="caracteristicas">
             <h2>Nombre del producto</h2>
-            <h3>Color</h3>
-            <label>Color</label>
-        </article>
+            <form>
+                <div class="color-ropa">
+                    <label>Color</label>
+                    <p><input type="radio" name="color" value="rojo" checked>Rojo</p>
+                    <p><input type="radio" name="color" value="naranja">Naranja</p>
+                    <p><input type="radio" name="color" value="azul">Azul</p>
+                </div>
+                
+                <div class="talle-ropa">
+                    <label>Talle</label>
+                    <p><input type="radio" name="talle" value="uno" checked>1</p>
+                    <p><input type="radio" name="talle" value="dos">2</p>
+                    <p><input type="radio" name="talle" value="tres">3</p>
+                    <p><input type="radio" name="talle" value="cuatro">4</p>
+                </div>
+
+                <div class="botones-precio">
+                    <button type="submit">Comprar</button>
+                    <p>$700</p>
+                    <p>20% Off</p>
+                    <button type="submit">Agregar a deseados</button>
+                </div>
+            </form>
+            <article class="descripcion">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, natus necessitatibus fugit iste sunt provident reprehenderit perspiciatis sint quaerat enim illo architecto sapiente alias impedit, inventore unde nulla beatae suscipit.</p>
+            </article>
+        </section>
+
+        <section class="recomendados">
+            <article class="producto">
+                <img src="#" alt="producto-recomendado">
+                <h3>Nombre del producto</h3>
+            </article>
+
+            <article class="producto">
+                <img src="#" alt="producto-recomendado">
+                <h3>Nombre del producto</h3>
+            </article>
+            <article class="producto">
+                <img src="#" alt="producto-recomendado">
+                <h3>Nombre del producto</h3>
+            </article>
+        </section>
+
+        <section class="comentarios">
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            
+        </section>
     </main>
 
     <footer>
