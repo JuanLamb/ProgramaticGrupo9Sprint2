@@ -69,6 +69,88 @@ body {
     display: none;
 }
 
+/* =================== FORM ========================= */
+
+input:required:invalid {
+    border: solid red 1px;
+}
+
+input:required:valid {
+    border: solid rgb(78, 245, 78) 1px;
+}
+
+.form-titulo {
+    text-align: center;
+    color: #3a6351;
+    margin: 10px;
+    font-size: 15px;
+}
+
+h4 {
+    margin: 10px;
+    font-size: 15px;
+}
+
+input {
+    
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.text-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 20px;
+}
+
+.text-inputs input {
+    width: 100%;
+    
+}
+
+.form-inputs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    padding: 20px 35px;
+
+}
+
+.form-inputs .text-inputs div {
+    flex: 1 1 100%;
+    text-align: center;
+    display: flex;
+
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+button a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+
+button {
+    text-decoration: none;
+    background-color: #3a6351;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+
 /* =================== FOOTER ========================= */
 
 .footer-home {

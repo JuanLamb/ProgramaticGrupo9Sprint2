@@ -69,6 +69,66 @@ body {
     display: none;
 }
 
+/* =================== FORM ========================= */
+
+input:required:invalid {
+    border: solid red 1px;
+}
+
+input:required:valid {
+    border: solid rgb(78, 245, 78) 1px;
+}
+
+.login-title {
+    text-align: center;
+    color: #3a6351;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+}
+
+.form-link {
+    padding: 20px;
+    margin: 30px;
+}
+
+.login-button button {
+    display: flex;
+    justify-content: center;
+    background-color: #3a6351;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+ 
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #eeeeee;
+    transition: 300ms;
+}
+
 /* =================== FOOTER ========================= */
 
 .footer-home {
