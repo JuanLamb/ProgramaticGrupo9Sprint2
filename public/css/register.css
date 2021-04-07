@@ -28,7 +28,7 @@ body {
 
 .header-home .bars {
     height: 30px;
-    width: 33%;
+    width: 100px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -36,14 +36,12 @@ body {
     padding-left:20px;
 }
 
-.header-home .bars {
-    width: 33%;
-    display: flex;
-    justify-content: left;
+.header-home .logo {
+    padding: 5px 5px 5px 20px;
 }
 
 .header-home .main-nav{
-    width: 33%;
+    width: 118px;
     padding-right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -52,11 +50,11 @@ body {
 .header-home .right-navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 100px;
+    min-width: 100px;
     flex: 1 1 100%;
 }
 
-.header-home .right-navbar i{
+.header-home .right-navbar i {
     font-size: 20px;
 }
 
@@ -67,6 +65,37 @@ body {
 
 .header-home .central-navbar {
     display: none;
+    width: 520px;
+}
+
+.header-home .central-navbar ul {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.header-home .central-navbar ul li{
+    list-style: none;
+    margin: 0 20px 0 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+@media (min-width: 769px) {
+    .header-home .bars {
+        display: none;
+    }
+
+    .header-home .central-navbar {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-home .main-nav {
+        padding-right: 40px;
+    }
 }
 
 /* =================== FORM ========================= */
@@ -164,7 +193,7 @@ button {
 }
 
 .footer-home .suscribe {
-    background-image: url(/images/img-footer.jpg);
+    background-image: url(/images/footerImages/img-footer.jpg);
     background-color: #cccccc;
     height: 250px; 
     background-position: center; 
@@ -180,6 +209,7 @@ button {
     width: 80%;
     color: #fff;
     text-align: left;
+    max-width: 600px;
 }
 
 .form-label {
@@ -217,7 +247,7 @@ button {
 
 .footerBottom {
     background-color: #393232;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -261,10 +291,15 @@ button {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .footerBottom li {
     list-style: none;
+}
+
+.footerBottom li a {
+    text-decoration: none;
     color: #f2edd7;
 }
