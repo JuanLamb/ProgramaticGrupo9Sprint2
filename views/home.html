@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="/css/flickity.css" media="screen">
     <title>Botacura</title>
 </head>
 <body>
@@ -19,29 +19,31 @@
                 <a href="#"><i class="fas fa-bars"></i></a>
             </div>
             <div class="logo">
-                <img src="/images/logo/logo.png" alt="logo">    
+                <a href="/"><img src="/images/logo/logo.png" alt="logo"></a>    
+            </div>
+            <div class="central-navbar">
+                <ul>
+                    <li><a href="#">Escalada</a></li>
+                    <li><a href="#">Camperas</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Mochilas</a></li>
+                    <li><a href="#">Marcas</a></li>
+                </ul>
             </div>
             <nav class="main-nav">
-                <div class="central-navbar">
-                    <ul>
-                        <li><a href="#">Escalada</a></li>
-                        <li><a href="#">Camping</a></li>
-                        <li><a href="#">Montanismo</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Marcas</a></li>
-                    </ul>
-                </div>
+                
                 <div class="right-navbar">
-                    <div class="user">
-                        <a><i class="fas fa-hiking"></i></a>
-                    </div>
-    
+                   
                     <div class="search">
                         <a><i class="fas fa-search"></i></a>
                     </div>
+
+                    <div class="user">
+                        <a href="/views/login.html"><i class="fas fa-user-circle"></i></a>
+                    </div>
     
                     <div class="cart">
-                        <a><i class="fas fa-shopping-cart"></i></a>
+                        <a href="/views/productCart.html"><i class="fas fa-shopping-cart"></i></a>
                     </div>
                 </div>
             </nav>
@@ -49,100 +51,166 @@
     </header>
 
     <section class="home-banner">
-
+        <div class="bannerImg">
+            <img src="/images/homeImages/smith_d_1317-2250x1266-1-1920x1079.jpg" alt="">
+        </div>
+        <div class="promo">
+            <h2>NUEVOS ELEMENTOS PARA TUS TRAVESIAS</h2>
+            <div class="holderButton">
+                <a href="#">SOGAS</a>
+                <a href="#">ARNESES</a>
+            </div>
+        </div>
     </section>
 
     <main class="home-main">
-        <article class="main-carrousel">
-            <div class="camperasBox">
+        <article class="main-catalogo main-carrousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "freeScroll": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true }'>
+            
+            <div class="clothingBox carrousel-cell">
+                <a href="#">Camperas</a>
+            </div>
+            <div class="shoesBox carrousel-cell">
+                <a href="#">Calzado</a>
+            </div>
+            <div class="backpacksBox carrousel-cell">
+                <a href="#">Mochilas</a>
+            </div>
+            <div class="elementsBox carrousel-cell">
+                <a href="#">Escalada</a>
+            </div>
+
+        </article>
+        <article class="main-offers">
+            <h3 class="main-offers-title">OFERTAS</h3>
+            <div class="carrousel-offers main-carrousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "freeScroll": true, "prevNextButtons": false, "pageDots": false}'>
                 
-            </div>
-            <div class="calzadoBox">
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+                
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+                
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+                
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
 
-            </div>
-            <div class="mochilasBox">
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
 
-            </div>
-            <div class="elementosBox">
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
 
-            </div>
+            </div>  
         </article>
-        <article class="main-ofertas">
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-        </article>
-        <article class="main-novedades">
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="" alt="" class="img-prod">
-                <div class="caracteristicasArticulo">
-                    <i class="heart"></i>
-                    <h3 class="nompreProducto"></h3>
-                    <p class="marcaProducto"></p>
-                    <p class="precioProducto"></p>
-                </div>
-            </div>
+        <article class="main-news">
+            <h3 class="main-news-title">NOVEDADES</h3>
+            <div class="carrousel-news main-carrousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "freeScroll": true, "prevNextButtons": false, "pageDots": false }'>
 
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+                <div class="product-card carrousel-cell">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="" class="img-prod">
+                    <div class="articleInfo">
+                        <i class="heart"></i>
+                        <h4 class="ProductName">Nombre Producto</h4>
+                        <p class="productBrand">Marca Producto</p>
+                        <p class="productPrice">$Precio</p>
+                    </div>
+                </div>
+
+            </div>
         </article>
     </main>
 
@@ -159,24 +227,25 @@
         </form>
         <div class="footerBottom">
             <div class="logoBox">
-                <img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura">
-                <img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura">
+                <a href="/"><img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura"></a>
+                <a href="/"><img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura"></a>
             </div>
             <div class="info">
                 <ul>
-                    <li>Quienes somos</li>
-                    <li>Contacto</li>
-                    <li>Atencion al cliente</li>
-                    <li>Terminos y condiciones</li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Atencion al cliente</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
                 </ul>
             </div>
             <div class="redes">
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/JuanLamb/ProgramaticGrupo9Sprint2"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </footer>
+    <script src="/js/flickity.pkgd.min.js"></script>
 </body>
 </html>

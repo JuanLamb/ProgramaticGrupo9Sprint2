@@ -4,8 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ body {
     font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+@keyframes leftSlide {
+    0%{
+        right: 50%;
+    }
+    100%{
+        right: 0;
+    }
 }
 
 /* =========================== HEADER =========================== */
@@ -27,7 +43,7 @@ body {
 
 .header-home .bars {
     height: 30px;
-    width: 33%;
+    width: 100px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -35,14 +51,12 @@ body {
     padding-left:20px;
 }
 
-.header-home .bars {
-    width: 33%;
-    display: flex;
-    justify-content: left;
+.header-home .logo {
+    padding: 5px 5px 5px 20px;
 }
 
 .header-home .main-nav{
-    width: 33%;
+    width: 118px;
     padding-right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -51,11 +65,11 @@ body {
 .header-home .right-navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 100px;
+    min-width: 100px;
     flex: 1 1 100%;
 }
 
-.header-home .right-navbar i{
+.header-home .right-navbar i {
     font-size: 20px;
 }
 
@@ -66,17 +80,208 @@ body {
 
 .header-home .central-navbar {
     display: none;
+    width: 520px;
+}
+
+.header-home .central-navbar ul {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.header-home .central-navbar ul li{
+    list-style: none;
+    margin: 0 20px 0 15px;
+    font-size: large;
+    font-weight: bold;
 }
 
 
-/* =================== MAIN =========================== */
-    main div {
-        height: 500px;
+@media (min-width: 769px) {
+    .header-home .bars {
+        display: none;
     }
 
-    main {
-        background-color: #f2edd7;
+    .header-home .central-navbar {
+        display: block;
     }
+}
+
+@media (min-width: 1200px) {
+    .header-home .main-nav {
+        padding-right: 40px;
+    }
+}
+
+/* =================== BANNER ========================= */
+
+.home-banner {
+    padding-bottom: 30px;
+    background-color: #f2edd7;
+    width: 100vw;
+    position: relative;
+    
+}
+
+.home-banner .bannerImg {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.bannerImg img{
+    max-width: 100%;
+    height: auto;
+}
+
+.home-banner .promo {
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    padding: 20px 0 0 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: auto;
+    width: 51%;
+}
+
+.home-banner .promo h2{
+    color:#393232 ;
+    width: 65%;
+    position: relative;
+    right: 500px;
+    animation: leftSlide 500ms 2000ms 1 forwards;
+}
+
+.home-banner .promo .holderButton {
+    margin-top: 30px;
+}
+
+.home-banner .promo a {
+    border: solid 1px #fff;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #3a635154;
+    transition: all 400ms;
+    position: relative;
+    right: 500px;
+    animation: leftSlide 500ms 2000ms 1 forwards;
+}
+
+.home-banner .promo a:hover{
+    background-color: #fff;
+    color: #3a6351;
+}
+
+@media (min-width: 361px) {
+    .home-banner .bannerImg {
+        overflow: hidden;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 769px) {
+    .home-banner .bannerImg {
+        height: 60vh;
+    }
+
+    .home-banner .promo h2 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-banner .bannerImg {
+        height: 80vh;
+    }
+
+    .home-banner .promo h2 {
+        font-size: 75px;
+    }
+
+    .home-banner .promo a {
+        padding: 10px;
+        font-size: 24px;
+    }
+}
+
+/* =================== MAIN =========================== */
+
+    .home-main {
+        background-color: #f2edd7;
+        padding-bottom: 30px;
+    }
+
+    .home-main article {
+        padding: 0 20px 0 20px;
+    }
+
+    .home-main h3 {
+        padding-left: 20px;
+        margin: 10px 0 10px 0;
+        font-size: 24px;
+        text-align: center;
+        color: #3a6351;
+    }
+
+    .carrousel-cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .carrousel-cell a{
+        text-decoration: none;
+        color: #f2edd7;
+    }
+
+    .product-card{
+        box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 300px;
+    }
+    
+    .product-card img {
+        height: 70%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .articleInfo{
+        border-top: solid #3a6351 3px;
+        height: 30%;
+        width: 100%;
+        font-size: 16px;
+        background-color: #fff;
+        padding: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .product-card{
+            width: 180px !important;
+            height: 220px !important;
+        }
+    }
+    @media (min-width: 769px) {
+        .main-catalogo {
+            display: none;
+        }
+        .main-offers-title{
+            margin-top: 0 !important;
+        }
+    }
+      
 /* =================== FOOTER ========================= */
 
 .footer-home {
@@ -86,7 +291,7 @@ body {
 }
 
 .footer-home .suscribe {
-    background-image: url(/images/img-footer.jpg);
+    background-image: url(/images/footerImages/img-footer.jpg);
     background-color: #cccccc;
     height: 250px; 
     background-position: center; 
@@ -102,6 +307,7 @@ body {
     width: 80%;
     color: #fff;
     text-align: left;
+    max-width: 600px;
 }
 
 .form-label {
@@ -139,7 +345,7 @@ body {
 
 .footerBottom {
     background-color: #393232;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -183,10 +389,15 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: flex-end;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .footerBottom li {
     list-style: none;
+}
+
+.footerBottom li a {
+    text-decoration: none;
     color: #f2edd7;
 }
