@@ -4,92 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del producto</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Detalle del producto | Botacura</title>
 </head>
 <body>
     
-    <header>
+    <header class="header-productDetail">
+        <section>
+            <div class="bars">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="/images/logo/logo.png" alt="logo"></a>    
+            </div>
+            <div class="central-navbar">
+                <ul>
+                    <li><a href="#">Escalada</a></li>
+                    <li><a href="#">Camperas</a></li>
+                    <li><a href="#">Calzado</a></li>
+                    <li><a href="#">Mochilas</a></li>
+                    <li><a href="#">Marcas</a></li>
+                </ul>
+            </div>
+            <nav class="main-nav">
+                
+                <div class="right-navbar">
+                   
+                    <div class="search">
+                        <a><i class="fas fa-search"></i></a>
+                    </div>
 
+                    <div class="user">
+                        <a href="/views/login.html"><i class="fas fa-user-circle"></i></a>
+                    </div>
+    
+                    <div class="cart">
+                        <a href="/views/productCart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </section>
     </header>
 
-    <main class="productDetail">
-        <div class="imagenes-izq">
-            <img src="#" alt="primeraFotoIzq">
-            <img src="#" alt="segundaFotoIzq">
-            <img src="#" alt="terceraFotoIzq">
-            <img src="#" alt="cuartaFotoIzq">
-        </div>
-        <div class="imagen-principal">
-            <img src="#" alt="fotoPrincipal">
-        </div>
-        <section class="caracteristicas">
-            <h2>Nombre del producto</h2>
-            <form>
-                <div class="color-ropa">
-                    <label>Color</label>
-                    <p><input type="radio" name="color" value="rojo" checked>Rojo</p>
-                    <p><input type="radio" name="color" value="naranja">Naranja</p>
-                    <p><input type="radio" name="color" value="azul">Azul</p>
-                </div>
-                
-                <div class="talle-ropa">
-                    <label>Talle</label>
-                    <p><input type="radio" name="talle" value="uno" checked>1</p>
-                    <p><input type="radio" name="talle" value="dos">2</p>
-                    <p><input type="radio" name="talle" value="tres">3</p>
-                    <p><input type="radio" name="talle" value="cuatro">4</p>
-                </div>
 
-                <div class="botones-precio">
-                    <button type="submit">Comprar</button>
-                    <p>$700</p>
-                    <p>20% Off</p>
-                    <button type="submit">Agregar a deseados</button>
-                </div>
-            </form>
-            <article class="descripcion">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, natus necessitatibus fugit iste sunt provident reprehenderit perspiciatis sint quaerat enim illo architecto sapiente alias impedit, inventore unde nulla beatae suscipit.</p>
-            </article>
+
+    <main class="productDetail">
+        <section class="imagenes">
+            <div class="imagen-principal">
+                <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="fotoPrincipal">
+            </div>
+
+            <div class="imagenes-der">
+                <img src="/images/productos/Casco/Casco2/edelrid_zodiac_36_imagen5.jpg" alt="primeraFotoDer">
+                <img src="/images/productos/Casco/Casco2/edelrid_zodiac_37_imagen7.jpg" alt="segundaFotoDer">
+                <img src="/images/productos/Casco/Casco2/edelrid_zodiac_38_imagen8.jpg" alt="terceraFotoDer">
+            </div>
+        </section>
+        
+
+        <section class="caracteristicas">
+            <div class="titulo-seccion">
+                <h2>CASCO EDELRID ZODIAC</h2>
+            </div>
+            
+            <div class="formulario">
+                <form>
+                    <div class="color-ropa">
+                        <label>Color</label>
+                        <p><input type="radio" name="color" value="rojo" checked>Rojo</p>
+                        <p><input type="radio" name="color" value="naranja">Naranja</p>
+                        <p><input type="radio" name="color" value="azul">Azul</p>
+                    </div>
+                    
+                    <div class="talle-ropa">
+                        <label>Talle</label>
+                        <p><input type="radio" name="talle" value="uno" checked>1</p>
+                        <p><input type="radio" name="talle" value="dos">2</p>
+                        <p><input type="radio" name="talle" value="tres">3</p>
+                        <p><input type="radio" name="talle" value="cuatro">4</p>
+                    </div>
+
+                    <div class="botones-precio">
+                        <button type="submit">Comprar</button>
+                        <div class="parrafos">
+                            <p id="precio">$700</p>
+                            <p id="descuento">0% Off</p>
+                        </div>
+                        <button type="submit">Agregar a deseados</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="descripcion">
+                <p>El Zodiac es un casco híbrido ligero y extremadamente estable con una cáscara de ABS y revestimiento de espuma EPS. El sistema Wing-Fit con el dial de ajuste trasero permite un ajuste fácil y de forma individual. Gracias a su innovador sistema de cierre en la oreja, la barbilla y el cuello se mantienen libres de hebillas. La regulación en la nuca se pliega dentro del casco, reduciendo significativamente el tamaño al guardarlo.
+                    Viene en talle único para medida de 54 a 62cm.
+                    NORMA CE-EN 12492</p>
+            </div>
         </section>
 
         <section class="recomendados">
+            <div class="titulo-seccion">
+                <h2>Te podría interesar...</h2>
+            </div>
+            
             <article class="producto">
-                <img src="#" alt="producto-recomendado">
+                <img src="/images/productos/calzado/botas_trekking_hombre_1A.jpg" alt="producto-recomendado">
                 <h3>Nombre del producto</h3>
             </article>
 
             <article class="producto">
-                <img src="#" alt="producto-recomendado">
+                <img src="/images/productos/camperas/campera-1/campera1-frente.jpg" alt="producto-recomendado">
                 <h3>Nombre del producto</h3>
             </article>
             <article class="producto">
-                <img src="#" alt="producto-recomendado">
+                <img src="/images/productos/calzado/botas_trekking_hombre_2A.jpg" alt="producto-recomendado">
                 <h3>Nombre del producto</h3>
             </article>
         </section>
 
         <section class="comentarios">
-            <article class="comentario">
-                <img src="#" alt="fotoDePerfil">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
-            </article>
-
-            <article class="comentario">
-                <img src="#" alt="fotoDePerfil">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
-            </article>
-
-            <article class="comentario">
-                <img src="#" alt="fotoDePerfil">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
-            </article>
-
+            <div class="titulo-seccion">
+                <h2>¡Dejanos tu opinión!</h2>
+            </div>
             
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            <article class="comentario">
+                <img src="#" alt="fotoDePerfil">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure totam quibusdam ipsa officiis, esse quas cupiditate quo. Ea repudiandae deleniti sunt incidunt, repellat nam saepe culpa esse optio. Beatae, possimus!</p>
+            </article>
+
+            <article class="tuComentario">                
+                    <div class="comentarioUsuario">
+                        <img src="#" alt="fotoDePerfil">
+                        <form action="/tuComentario" method="POST">
+                            <label for="comentario"></label>
+                            <textarea name="comentarioUsuario" id="comentario" placeholder="Dejá tu comentario"></textarea>
+                        </form>
+                    </div>
+            </article>
         </section>
     </main>
 
-    <footer>
 
+
+    <footer class="footer-productDetail">
+        <form class="suscribe" action="/subscribe" method="POST">
+            <div class="form-label">
+                <h3>Suscribite a nuestro newsletter</h3>
+                <p>¡Mantente al dia con nuestras últimas ofertas!</p>
+            </div>
+            <div class="subvar">
+                <input type="email" name="subscribe" placeholder="Email">
+                <button type="submit"><a href="/"><i class="fas fa-arrow-right"></i></a></button>
+            </div>
+        </form>
+        <div class="footerBottom">
+            <div class="logoBox">
+                <a href="/"><img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura"></a>
+                <a href="/"><img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura"></a>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Atencion al cliente</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/JuanLamb/ProgramaticGrupo9Sprint2"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

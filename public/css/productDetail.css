@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+ body {
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+/* ==================== HEADER ==================== */
+.header-productDetail{
+    background-color: #f2edd7;
+    width: 100vw;
+    border-bottom: solid 5px #3a6351;
+}
+
+.header-productDetail section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-productDetail img {
+    width: 70px;
+}
+
+.header-productDetail .bars {
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+    padding-left:20px;
+}
+
+.header-productDetail .logo {
+    padding: 5px 5px 5px 20px;
+}
+
+.header-productDetail .main-nav{
+    width: 118px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-productDetail .right-navbar {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+    flex: 1 1 100%;
+}
+
+.header-productDetail .right-navbar i {
+    font-size: 20px;
+}
+
+.header-productDetail a{
+    text-decoration: none;
+    color: #393232;
+}
+
+.header-productDetail .central-navbar {
+    display: none;
+    width: 520px;
+}
+
+.header-productDetail .central-navbar ul {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.header-productDetail .central-navbar ul li{
+    list-style: none;
+    margin: 0 20px 0 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+@media (min-width: 769px) {
+    .header-productDetail .bars {
+        display: none;
+    }
+
+    .header-productDetail .central-navbar {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-productDetail .main-nav {
+        padding-right: 40px;
+    }
+}
+
+/* ==================== MAIN ==================== */
+main.productDetail {
+    background-color: #f2edd7;
+    padding: 30px 20px 0px 20px;
+}
+
+    main.productDetail section {
+        padding-bottom: 30px;
+    }
+
+            main.productDetail section div.imagen-principal img {
+                width: 100%;
+                height: 70%;
+                border: solid black 2px;
+            }
+
+        main.productDetail section div.imagenes-der {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+            main.productDetail section div.imagenes-der img {
+                width: 25%;
+                border: solid black 1px;
+            }
+
+    main.productDetail section.caracteristicas div {
+        padding-bottom: 10px;
+    }
+
+    main.productDetail section.caracteristicas div input{
+        width: 50px;
+        height: 15px;
+    }
+    main.productDetail section.caracteristicas div.color-ropa p {
+        line-height: 27px;
+    }
+
+    main.productDetail section.caracteristicas div.botones-precio {
+        display: flex;
+        background-color: #e48257;
+        padding: 0%;
+    }
+
+        main.productDetail section.caracteristicas div.botones-precio button {
+            flex: 1 1 10%;
+            background-color: lightgreen;
+            border: none;
+        }
+        main.productDetail section.caracteristicas div.botones-precio button:hover {
+            background-color: gold;
+            transition: 500ms;
+        }
+        main.productDetail section.caracteristicas div.botones-precio div.parrafos {
+            flex: 1 1 20%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        main.productDetail section.caracteristicas div.botones-precio div.parrafos #precio {
+            color: white;
+        }
+        main.productDetail section.caracteristicas div.botones-precio div.parrafos #descuento {
+            color: green;
+        }
+
+
+/* ==================== FOOTER ==================== */
+.footer-productDetail {
+    border-top: solid 5px #e48257;
+    background-color: #f2edd7;
+    height: 30vh;
+}
+
+.footer-productDetail .suscribe {
+    background-image: url(/images/footerImages/img-footer.jpg);
+    background-color: #cccccc;
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscribe div {
+    width: 80%;
+    color: #fff;
+    text-align: left;
+    max-width: 600px;
+}
+
+.form-label {
+    margin-bottom: 15px;
+}
+
+.subvar {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px white;
+}
+
+.subvar input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.subvar input::placeholder {
+    color: white;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.subvar button {
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+}
+
+.subvar button a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerBottom {
+    background-color: #393232;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footerBottom .logoBox {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    flex: 1 1 50%;
+}
+
+.footerBottom .logoImg {
+    height: 30px;
+}
+
+.footerBottom .logoLetras {
+    width: 100px;
+    height: 30px;
+}
+
+.footerBottom .info {
+    flex: 1 1 50%;
+}
+
+.footerBottom .redes {
+    flex: 1 1 100%;
+}
+
+.footerBottom .redes i {
+    background-color: #f2edd7;
+    color: #393232;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.footerBottom ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footerBottom li {
+    list-style: none;
+}
+
+.footerBottom li a {
+    text-decoration: none;
+    color: #f2edd7;
+}
