@@ -92,7 +92,6 @@ h4 {
 }
 
 input {
-    
     padding: 10px 5px;
     border-radius: 10px;
     margin: 10px;
@@ -148,6 +147,11 @@ button {
 .button {
     text-decoration: none;
     text-align: center;
+}
+
+.button button:hover {
+    background-color: #70b195;
+    transition: 300ms;
 }
 
 

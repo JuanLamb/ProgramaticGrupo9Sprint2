@@ -124,8 +124,8 @@ input {
     color: white;
 }
 
-.login-button:hover {
-    background-color: #eeeeee;
+.login-button button:hover {
+    background-color: #70b195;
     transition: 300ms;
 }
 
