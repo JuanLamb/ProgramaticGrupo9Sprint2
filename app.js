@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT
 const path = require('path');
 app.use(express.static('public'));
 
@@ -27,6 +27,6 @@ app.get('/productCart', (req, res) => {
 
 
 
-app.listen(port, () => {
+app.listen(port || 3000, () => {
     console.log('Servidor corriendo en puerto '+ port);
 });
