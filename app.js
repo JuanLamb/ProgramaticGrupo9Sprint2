@@ -28,5 +28,5 @@ app.get('/productCart', (req, res) => {
 
 
 app.listen(port || 3000, () => {
-    console.log('Servidor corriendo en puerto '+ port);
+    console.log('Servidor corriendo en puerto ');
 });
