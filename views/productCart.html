@@ -9,11 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/flickity.css" media="screen">
-    <title>Botacura</title>
+    <title>Carrito de compras | Botacura</title>
 </head>
 <body>
-    <header class="header-home">
+    <header class="header-cart">
         <section>
             <div class="bars">
                 <a href="#"><i class="fas fa-bars"></i></a>
@@ -49,101 +48,134 @@
             </nav>
         </section>
     </header>
-    
-    <body>
 
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-        <header>
-            <div class="form-titulo">
-                <h1 class="text-center">Carrito de compra</h1>
-                
+    <main class="main-cart">
+        <h1 class="mainTitle">Tu carrito de compras</h1>
+        <section class="progressBar">
+            <div class="cart">
+                <div class="paso paso1"><p><i class="fas fa-hiking"></i></p></div>
+                <p class="subtext">Carrito</p>
             </div>
-        </header>
-       
-        <!-- Carrito -->
- <section class="shopping-cart">
-    <div class="container">
-        <section class="shopping-cart">
-            <div class="container">
-                <h2 class="text-center"><h2><span class="red">1</span>Carrito</h2>
-                <h2><span class="white">2</span>Tus datos</h2>
-                 <h2><span class="white">3</span>Envío</h2>
-                 <h2><span class="white">4</span>Confirmá y Pagá</h2>   
-                </h2>
-                            
-        
-                <div class="row">
-            <div class="col-16">
-                <div class="shopping-cart-header">
-                    <h2>Producto</h2>
-                </div> 
-                <div>
-                <img src="#" alt=" Descripcion" class="img-prod">
-                      </div>
-            <div class="col-6">
-                <div class="shopping-cart-header">
-                    <h4 class="text-truncate">Precio</h4>
+            <div class="yourData">
+                <div class="paso paso2"><p></p></div>
+                <p class="subtext">Tus datos</p>
+            </div>
+            <div class="send">
+                <div class="paso paso3"><p></p></div>
+                <p class="subtext">Envio</p>
+            </div>
+            <div class="confirm">
+                <div class="paso paso4"><p></p></div>
+                <p class="subtext">Confirma y paga</p>
+            </div>
+        </section>
+        <article class="products">
+
+            <div class="product">
+                <div class="imgName">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="">
+                    <p class="productName">Casco</p>
                 </div>
-            </div>
-            <div class="col-8">
-                <div class="shopping-cart-header">
-                    <h4>Cantidad</h4>
+                <div class="quantity">
+                    <p class="productQuantity">Cantidad</p>
+                    <div class="number"></div> 
                 </div>
-            </div>
-        </div>
-        <div class="shopping-cart-items shoppingCartItemsContainer">
-        </div>
-        
-        
-            <div class="col-6">
-                <div class="shopping-cart-total d-flex align-items-center">
-                    <p class="mb-0">Total</p>
-                    <p class="ml-4 mb-0 shoppingCartTotal">$00.00</p>
-                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                        data-delay="2000">
-                        <div class="toast-header">
-                            <span>✅</span>
-                            <strong class="mr-auto ml-1 text-secondary">Agregar</strong>
-                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                       
+                <div class="sumaPrecios">
+                    <div class="price">
+                        <p>Precio</p>
+                        <p>$###</p>
                     </div>
-                    <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                        data-target="#comprarModal">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-     
-        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="comprarModalLabel">Gracias por su compra</h4>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$###</p>
                     </div>
-                    
-               </div>
+                </div>
+                <div class="buttonDelete">
+                    <p>Eliminar</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="imgName">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="">
+                    <p class="productName">Casco</p>
+                </div>
+                <div class="quantity">
+                    <p class="productQuantity">Cantidad</p>
+                    <div class="number"></div> 
+                </div>
+                <div class="sumaPrecios">
+                    <div class="price">
+                        <p>Precio</p>
+                        <p>$###</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$###</p>
+                    </div>
+                </div>
+                <div class="buttonDelete">
+                    <p>Eliminar</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="imgName">
+                    <img src="/images/productos/Casco/Casco2/edelrid_zodiac_34_imagen1.jpg" alt="">
+                    <p class="productName">Casco</p>
+                </div>
+                <div class="quantity">
+                    <p class="productQuantity">Cantidad</p>
+                    <div class="number"></div> 
+                </div>
+                <div class="sumaPrecios">
+                    <div class="price">
+                        <p>Precio</p>
+                        <p>$###</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$###</p>
+                    </div>
+                </div>
+                <div class="buttonDelete">
+                    <p>Eliminar</p>
+                </div>
+            </div>
+        </article>
+        <div class="shipment">
+            <div class="extras"><p>Total Productos AR $###</p>
+                <p>Cupon de Descuento</p>
+                <p>Cargo envio AR$##</p>
+            </div>
+            <h3>TOTAL</h3>
+            <p>AR$###</p>
+        </div>
+        <div class="continue">
+            <div class="continueButton">
+                <p>Siguiente</p>
             </div>
         </div>
-      
-    </div>
+        <section class="offers">
+            <div class="freeShipment">
+                <i class="fas fa-truck"></i>
+                <h3>ENVIO GRATIS</h3>
+                <p>en compras superiores a $$</p>
+            </div>
+            <div class="noInterest">
+                <i class="far fa-credit-card"></i>
+                <h3>CUOTAS SIN INTERES</h3>
+                <p>ver promociones bancarias</p>
+            </div>
+            <div class="complains">
+                <i class="fas fa-phone-alt"></i>
+                <h3>RECLAMOS</h3>
+                <p>011-0123-4567</p>
+            </div>
+        </section>
+    </main>
 
-</section>
-<button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" 
-        data-target="#comprarModal">SIGUIENTE</button>
-                </div>
-
-
-
-    <footer class="footer-home">
+    <footer class="footer-cart">
         <form class="suscribe" action="/subscribe" method="POST">
             <div class="form-label">
                 <h3>Suscribite a nuestro newsletter</h3>
@@ -156,30 +188,24 @@
         </form>
         <div class="footerBottom">
             <div class="logoBox">
-                <img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura">
-                <img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura">
+                <a href="/"><img class="logoImg" src="/images/logo/logoBlanco.png" alt="Botacura"></a>
+                <a href="/"><img class="logoLetras" src="/images/logo/logoLetrasBlanco.png" alt="Botacura"></a>
             </div>
             <div class="info">
                 <ul>
-                    <li>Quienes somos</li>
-                    <li>Contacto</li>
-                    <li>Atencion al cliente</li>
-                    <li>Terminos y condiciones</li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Atencion al cliente</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
                 </ul>
             </div>
             <div class="redes">
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/JuanLamb/ProgramaticGrupo9Sprint2"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </footer>
-
-
-</body>
-</html>
-    
-    <script src="/js/flickity.pkgd.min.js"></script>
 </body>
 </html>
