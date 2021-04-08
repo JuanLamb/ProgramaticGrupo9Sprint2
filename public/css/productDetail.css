@@ -117,6 +117,7 @@ main.productDetail {
                 width: 100%;
                 height: 70%;
                 border: solid black 2px;
+                box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
             }
 
         main.productDetail section div.imagenes-der {
@@ -129,6 +130,7 @@ main.productDetail {
                 width: 25%;
                 border: solid black 1px;
             }
+
 
     main.productDetail section.caracteristicas div {
         padding-bottom: 10px;
@@ -170,6 +172,40 @@ main.productDetail {
         }
         main.productDetail section.caracteristicas div.botones-precio div.parrafos #descuento {
             color: green;
+        }
+
+
+        main.productDetail section.recomendados article.producto {
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
+        }
+            main.productDetail section.recomendados article.producto img {
+                width: 100%;
+                border-bottom: black solid 3px;
+            }
+
+
+    main.productDetail section.comentarios article {
+        background-color: #393232;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        margin: 10px;
+    }
+
+        main.productDetail section.comentarios article img {
+            width: 50px;
+            height: 50px;
+        }
+        main.productDetail section.comentarios article.tuComentario {
+            background-color: #393232;
+            padding: 10px 20px 10px 20px;
+        }
+        main.productDetail section.comentarios article.tuComentario textarea {
+            width: 100%;
+            height: 75px;
         }
 
 
