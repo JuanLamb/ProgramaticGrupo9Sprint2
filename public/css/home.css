@@ -251,8 +251,12 @@ html {
         max-width: 300px;
     }
     
-    .product-card img {
+    .product-card a {
         height: 70%;
+    }
+    
+    .product-card img {
+        height: 100%;
         width: 100%;
         background-position: center;
         background-size: cover;
